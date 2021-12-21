@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_main">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/openIdInput"
+        android:inputType="text"
+        android:editable="true"
+        android:enabled="true"
+        android:imeOptions="actionGo" />
+    <TextView
+        android:text="@string/label_placeholder"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="389.5dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/openIdInput"
+        android:id="@+id/uname"
+        tools:ignore="HardcodedText" />
+    <Button
+        android:text="@string/check_sign"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/uname"
+        android:id="@+id/btnChkSign"
+        android:enabled="false" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/label_qd"
+        android:layout_below="@+id/btnChkSign"
+        android:id="@+id/txtqd"/>
+    <Button
+        android:text="@string/qd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtqd"
+        android:id="@+id/btnqd"
+        android:enabled="false" />
+
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<resources>
+	<string name="app_name">随便的几个按钮</string>
+	<string name="action_settings">Settings</string>
+	<string name="no_openid_match">没有找到匹配的openid</string>
+	<string name="label_placeholder">
+		当你成功输入openid的时候这里显示你的名字
+	</string>
+	<string name="check_sign">检测签到</string>
+	<string name="label_qd">当你检测完签到之后这里会出现一个课堂或者没有任何东西</string>
+	<string name="qd">签到！</string>
+</resources>
