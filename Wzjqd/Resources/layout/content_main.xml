@@ -7,10 +7,18 @@
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:showIn="@layout/activity_main">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="在这里输入OpenId:"
+        android:id="@+id/labelOpenidHere"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        />
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/openIdInput"
+        android:layout_below="@id/labelOpenidHere"
         android:inputType="text"
         android:editable="true"
         android:enabled="true"
@@ -29,7 +37,9 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/uname"
         android:id="@+id/btnChkSign"
-        android:enabled="false" />
+        android:enabled="false"
+        android:rotation="180"
+        android:layout_marginHorizontal="5dp" />
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -43,6 +53,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/txtqd"
         android:id="@+id/btnqd"
-        android:enabled="false" />
+        android:enabled="false"
+        android:layout_marginHorizontal="5dp" />
+    
 
 </RelativeLayout>

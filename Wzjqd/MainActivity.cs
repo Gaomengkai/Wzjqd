@@ -28,8 +28,8 @@ namespace Wzjqd
             FloatingActionButton fab = FindViewById<FloatingActionButton>(Resource.Id.fab);
             fab.Click += FabOnClick;
 
-            //AppCompatEditText textOpenId = FindViewById<AppCompatEditText>(Resource.Id.openIdInput);
-            //textOpenId.KeyPress += OpenidOnFinish;
+            AppCompatEditText textOpenId = FindViewById<AppCompatEditText>(Resource.Id.openIdInput);
+            textOpenId.KeyPress += OpenidOnFinish;
 
             Button btnChk = FindViewById<Button>(Resource.Id.btnChkSign);
             btnChk.Click += OnBtnChkClicked;
@@ -71,7 +71,8 @@ namespace Wzjqd
             string name = await sgn.GetUserName();
             if (name == "")
             {
-                Toast.MakeText(this, "设置失败！", ToastLength.Short).Show();
+                Snackbar.Make(view, "设置失败", Snackbar.LengthLong)
+                .SetAction("Action", (View.IOnClickListener)null).Show();
                 return;
             }
             stu.name = name;
